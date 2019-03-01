@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+  char name[30];
+  int i;
+  printf("İsim giriniz:");
+  scanf("%s", name);
+//  for(i=0; name[i] != '\0'; i++)
+//      printf("%c", name[i]);
+  printf("girdiginiz isim : %s", name);    
+  return 0;
+  
+}
