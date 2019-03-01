@@ -1,0 +1,23 @@
+#include <studio.h>
+
+int main()
+
+{
+    char name[30];
+    int i;
+    int boyut= 0, p=1;
+    printf("Isim giriniz:");
+    scanf("%s", name);
+    for(i=0; name[i] != '\0'; i++)
+      boyut++;
+    for(i=0; i<boyut; i++)
+      if(name[i] !=name[boyut-1-i])
+        p=0;
+    if(p==1)
+      printf("palindromiktir");
+    else
+      printf("palindromik degildir")
+      
+    return 0;
+    
+ }
